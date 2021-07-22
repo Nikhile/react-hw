@@ -64,7 +64,7 @@ function calculateRewardPoints(customerData) {
       total.push(cRow);
     });
   }
-console.log("total", total);
+
   let totalCustomerSpent = [];
   for (custKey in totalPointsByCustomer) {
     debugger;
@@ -73,7 +73,7 @@ console.log("total", total);
       points: totalPointsByCustomer[custKey]
     });
   }
-  console.log("totalCustomerSpent", totalPointsByCustomer);
+
   return {
     summaryByCustomer: total,
     transactionPoints,
