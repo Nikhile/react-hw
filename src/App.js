@@ -28,17 +28,17 @@ function calculateRewardPoints(customerData) {
   let byCustomer = {};
   let totalPointsByCustomer = {};
 
-  transactionPoints.forEach(transactionPoints => {
+  transactionPoints.map(transactionPoints => {
+    
     let { customerId, customerName, month, points } = transactionPoints;
 
     if (!byCustomer[customerId]) {
       byCustomer[customerId] = [];
     }
 
-    if (!totalPointsByCustomer[customerId]) {
+    if (!totalPointsByCustomer[customerName]) {
       totalPointsByCustomer[customerName] = 0;
     }
-console.log(totalPointsByCustomer[customerName], points);
     totalPointsByCustomer[customerName] += points;
 
     if (byCustomer[customerId][month]) {
@@ -64,15 +64,16 @@ console.log(totalPointsByCustomer[customerName], points);
       total.push(cRow);
     });
   }
-
+console.log("total", total);
   let totalCustomerSpent = [];
   for (custKey in totalPointsByCustomer) {
+    debugger;
     totalCustomerSpent.push({
       customerName: custKey,
       points: totalPointsByCustomer[custKey]
     });
   }
-
+  console.log("totalCustomerSpent", totalPointsByCustomer);
   return {
     summaryByCustomer: total,
     transactionPoints,

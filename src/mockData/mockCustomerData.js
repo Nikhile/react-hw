@@ -10,19 +10,19 @@ export default function() {
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 180,
             transctionDate: "07-21-2020"
           },
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 225,
             transctionDate: "08-21-2020"
           },
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 310,
             transctionDate: "08-25-2020"
           },
           {
@@ -34,7 +34,7 @@ export default function() {
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 110,
             transctionDate: "09-27-2020"
           },
           {
@@ -46,19 +46,19 @@ export default function() {
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 350,
             transctionDate: "11-06-2020"
           },
           {
             customerId: 1,
             customerName: "Elon",
-            amountSpent: 125,
+            amountSpent: 340,
             transctionDate: "11-21-2020"
           },
           {
             customerId: 2,
             customerName: "Jeff",
-            amountSpent: 125,
+            amountSpent: 130,
             transctionDate: "02-01-2020"
           },
           {
@@ -100,13 +100,13 @@ export default function() {
           {
             customerId: 3,
             customerName: "Richard",
-            amountSpent: 120,
+            amountSpent: 160,
             transctionDate: "04-22-2020"
           },
           {
             customerId: 3,
             customerName: "Richard",
-            amountSpent: 320,
+            amountSpent: 110,
             transctionDate: "05-22-2020"
           }
       ]
